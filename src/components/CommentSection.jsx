@@ -8,7 +8,7 @@ import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-q
 import { useInView } from 'react-intersection-observer';
 import useAuthStore from '../store/useAuthStore';
 import ChatForm from './form/ChatForm';
-import MediaCardMain from './cards/mediaCardMain';
+import MediaCardMain from './cards/MediaCardMain'
 import PostMenu from './menu/PostMenu';
 
 export default function CommentSection(props) {
