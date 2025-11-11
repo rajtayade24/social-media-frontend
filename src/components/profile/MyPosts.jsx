@@ -4,7 +4,6 @@ import useAuthStore from "../../store/useAuthStore";
 import { useAuthPosts } from "../../hooks/useAuthPosts";
 import { useInView } from "react-intersection-observer";
 import { useUserPosts } from "../../hooks/useUserPosts";
-import { stopOverflow } from "../../general/StopOverflow";
 
 export default function MyPosts(props) {
   const profileId = useAuthStore(s => s.profileId)
