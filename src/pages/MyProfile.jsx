@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 import FollowsBtn from "../components/buttons/FollowsBtn";
 import useAuthStore from "../store/useAuthStore";
 import normalizeUrl from "../utils/urlUtils";
-import { stopOverflow } from "../general/StopOverflow";
 
 const mobileWidth = 600;
 export default function MyProfile(props) {
