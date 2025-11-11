@@ -1,6 +1,6 @@
 import CurrentConversationSection from "./CurrentConversationSection"
 import ProfileLists from '../lists/ProfileLists';
-import { createElement, useEffect, useRef, useState } from "react";
+import {  useEffect,  useState } from "react";
 import { createPortal } from "react-dom";
 import { ChevronLeft } from "lucide-react";
 

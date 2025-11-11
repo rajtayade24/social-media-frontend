@@ -286,7 +286,7 @@ export default function CommentSection(props) {
           post={props.post}
           showPostMenu={showPostMenu === props.post?.id}
           setShowPostMenu={setShowPostMenu}
-          handleDeletePost={handleDeletePost}
+          handleDeletePost={props.handleDeletePost}
         />
       )}
 

@@ -3,7 +3,8 @@ import React, { useRef, useEffect, useState, forwardRef, isValidElement, useMemo
 import CommentSection from '../components/CommentSection';
 import PostsProfileCard from '../components/profile/PostsProfileCard';
 import PostMenu from "../components/menu/PostMenu"
-import MediaCardMain from '../components/cards/mediaCardMain.jsx';
+// import MediaCardMain from '../components/cards/MediaCardMain';
+import MediaCardMain from '../components/cards/MediaCardMain.jsx';
 
 import { BASE_URL } from '../service/api';
 

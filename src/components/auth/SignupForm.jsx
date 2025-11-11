@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { apiFetch, BASE_URL } from "../../service/api";
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { UserCircle2Icon } from "lucide-react";
 import useAuthStore from "../../store/useAuthStore";
 
