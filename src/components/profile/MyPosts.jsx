@@ -51,8 +51,6 @@ export default function MyPosts(props) {
     props.navigate(`comment`)
   }
   
-  // stopOverflow([activeCommentIndex !== null])
-
   const closeCommentSection = () => {
     if (activeCommentIndex !== null) {
       setActiveCommentSection([])

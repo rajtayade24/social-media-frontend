@@ -24,8 +24,6 @@ export default function MyProfile(props) {
 
   const profile = useAuthStore(s => s.profile)
 
-  // stopOverflow([currentFollowSection !== null, editProfile])
-
   useEffect(() => {
     if (props.updateSuccess === true)
       setEditProfile(false);

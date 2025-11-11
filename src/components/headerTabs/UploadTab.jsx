@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { apiFetch, BASE_URL } from "../../service/api";
 import { useNavigate } from "react-router-dom";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import useAuthStore from "../../store/useAuthStore";
-import { uploadPost } from "../../service/postService";
 import { useUserPosts } from "../../hooks/useUserPosts";
-import { stopOverflow } from "../../general/StopOverflow";
 
 export default function uploadTab(props) {
   const navigate = useNavigate();
@@ -61,7 +57,6 @@ export default function uploadTab(props) {
     navigate("/")
     // if (setActiveSection) setActiveSection(null);
   };
-  // stopOverflow([activeSection === "upload"])
   return (
     <div className="fixed inset-0 bg-black/70 z-[999] flex items-center justify-center backdrop-blur-sm transition-all duration-300"
       onClick={handleBackdropClick}>

@@ -11,7 +11,6 @@ import useAuthStore from '../store/useAuthStore';
 import { useInView } from 'react-intersection-observer';
 import PostActionIcons from '../components/cards/PostActionIcons.jsx';
 import { useUserPosts } from '../hooks/useUserPosts.js';
-import { stopOverflow } from '../general/StopOverflow.js';
 
 function Section(props) {
   const token = useAuthStore(s => s.token)
@@ -124,8 +123,6 @@ function Section(props) {
     setActiveCommentIndex(index);
     props.navigate("comments")
   };
-
-  // stopOverflow([activeCommentIndex !== null])
 
   // close comment modal
   const closeCommentSection = () => {
