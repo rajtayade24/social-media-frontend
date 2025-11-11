@@ -7,5 +7,18 @@ export default defineConfig({
     react(),        // React plugin
     tailwindcss(),  // Tailwind plugin
   ],
-  base: '/instagram-clone/' // repo name
+  define: {
+    global: 'window'
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8888',
+        changeOrigin: true,
+        secure: false,
+        // ws: true // not needed for SSE
+      }
+    }
+  }
+  // base: '/instagram-clone/' // repo name
 });
